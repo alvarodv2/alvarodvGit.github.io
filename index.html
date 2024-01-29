@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO | @alvarodv2</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="iconos/favicon.svg" type="image/x-icon">
+    <!-- Incluimos la librería SweetAlert para incluir alertas con un estilo diferente -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <label class="labels" for="email">INTRODUCE UN CORREO ELECTRÓNICO (p.ej.: pepe@foc.es):</label>
+        <input class="inputs" type="email" id="email">
+        <button class="botones" type="button" onclick="validarEmail()">VALIDAR</button>
+        </br>
+
+        <label class="labels" for="password">INTRODUCE UNA CONTRASEÑA (5 caracteres, mínimo 1 May, 1 Min, 1 Numero):</label>
+        <input class="inputs" type="password" id="password">
+        <button class="botones" type="button" onclick="validarPassword()">VALIDAR</button>
+        </br>
+
+        <label class="labels" for="userName">INTRODUCE UN NOMBRE DE USUARIO (tres o más caracteres):</label>
+        <input class="inputs" type="text" id="userName">
+        <button class="botones" type="button" onclick="validarUserName()">VALIDAR</button>
+        </br>
+
+        <label class="labels" for="nombreyApell">INTRODUCE TU NOMBRE Y APELLIDOS (obligatorio):</label>
+        <input class="inputs" type="text" id="nombreyApell">
+        <button class="botones" type="button" onclick="validarFSName()">VALIDAR</button>
+        </br>
+
+        <div class="buttonLimpio">
+            <button class="botones" type="button" class="prueba" id="botonCTotal" onclick="validarControlTotal()"> ENVIAR
+            </button>
+            <button class="botones" type="reset" class="prueba1" id="botonLimpieza" onclick="validarLimpiar()">LIMPIAR </button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
